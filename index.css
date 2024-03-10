@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair Display:700|Playfair Display:400');
+
+:root[data-theme="light"] {
+  --text: #000000;
+  --background: #eeeeee;
+  --primary: #272626;
+  --secondary: #e6e6e5;
+  --accent: #b5b5b5;  
+}
+h1 {
+  font-size: 120px;
+  font-weight: 400;
+}
+h2 {
+  font-size: 68px;
+  font-weight: 400;
+}
+h3 {
+  font-size: 38px;
+  font-weight: 400;
+}
+h4 {
+  font-size: 28px;
+  font-weight: 400;
+}
+h5 {
+  font-size: 21px;
+  font-weight: 400;
+}
+p {
+  font-size: 16px;
+}
+/*-----------General---------------*/
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+body {
+  font-family: 'Playfair Display';
+  font-weight: 400;
+  background-color: #eeeeee;
+  color: #000000;
+}
+section {
+  width: 80vw;
+  align-self: center;
+  height: 100vh;
+  margin: auto;
+  /* TODO: delete this */
+  /* border: 1px solid rgb(0, 0, 0); */
+  /* outline: red solid 1px; */
+}
+.box {
+  /* border: 1px solid #000000; */
+  padding: auto;
+  height: auto;
+  width: 50%;
+  float: left;
+  margin-top: 120px;
+  align-self: center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*-------------NavBar------------*/
+nav {
+  padding-top: 10px;
+  margin: auto;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  background-color: #eeeeee;
+  width: 100vw;
+  align-self: center;
+  position: fixed;
+  justify-content: space-between;
+  display: flex;
+  /* TODO: delete this */
+  /* border: 1px solid rgb(0, 0, 0); */
+  /* outline: #4CAF50 solid 2px; */
+}
+.Logo {
+  padding-top: 10px;
+  width: 221;
+  display: inline-block;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+/*---------atagsAnimation--------*/
+
+ a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 400;
+  position: relative;
+}
+ a::after {
+  content: '';
+  width: 0;
+  height: 1.5px;
+  background: #4e4d4d;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  transition: 0.5s;
+}
+ a:hover:after {
+  width: 100%;
+}
+
+/*---------Box--------*/
+.box{
+  margin-top: 150px;
+  padding-left: 5%;
+}
+
+.box h4 {
+  margin-top: 20px;
+  padding-left: 100px;
+}
+#Contact {
+  height: 90vh;
+}
+
+
