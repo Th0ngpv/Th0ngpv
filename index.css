@@ -1,130 +1,289 @@
-@import url('https://fonts.googleapis.com/css?family=Playfair Display:700|Playfair Display:400');
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
-:root[data-theme="light"] {
-  --text: #000000;
-  --background: #eeeeee;
-  --primary: #272626;
-  --secondary: #e6e6e5;
-  --accent: #b5b5b5;  
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
-h1 {
-  font-size: 120px;
-  font-weight: 400;
-}
-h2 {
-  font-size: 68px;
-  font-weight: 400;
-}
-h3 {
-  font-size: 38px;
-  font-weight: 400;
-}
-h4 {
-  font-size: 28px;
-  font-weight: 400;
-}
-h5 {
-  font-size: 21px;
-  font-weight: 400;
-}
-p {
-  font-size: 16px;
-}
-/*-----------General---------------*/
-* {
-  box-sizing: border-box;
-  margin: 0px;
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
 body {
-  font-family: 'Playfair Display';
-  font-weight: 400;
-  background-color: #eeeeee;
-  color: #000000;
+	line-height: 1;
 }
-section {
-  width: 80vw;
-  align-self: center;
-  height: 100vh;
-  margin: auto;
-  /* TODO: delete this */
-  /* border: 1px solid rgb(0, 0, 0); */
-  /* outline: red solid 1px; */
+ol, ul {
+	list-style: none;
 }
-.box {
-  /* TODO: delete this */
-  /* border: 1px solid #000000; */
-  padding: auto;
-  height: auto;
-  width: 50%;
-  float: left;
-  margin-top: 120px;
-  align-self: center;
+blockquote, q {
+	quotes: none;
 }
-
-html {
-  scroll-behavior: smooth;
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body {
+    background-color: #eeeeee;
+}
+/* ---------Nav bar------------ */
+.website_name_img {
+    width: 200px;
+    padding: 20px;
 }
 
-/*-------------NavBar------------*/
+.menu_img {
+    width: 30px;
+    height: 30px;
+    padding: 30px;
+    padding-bottom: 30px;
+    float: right;
+}
+
 nav {
-  padding-top: 10px;
-  margin: auto;
-  padding-left: 10vw;
-  padding-right: 10vw;
-  background-color: #eeeeee;
-  width: 100vw;
-  align-self: center;
-  position: fixed;
-  justify-content: space-between;
-  display: flex;
-  /* TODO: delete this */
-  /* border: 1px solid rgb(0, 0, 0); */
-  /* outline: #4CAF50 solid 2px; */
+    width: 80%;
+    background-color: #eeeeee;
+    position: fixed;
+    justify-content: space-between;
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
 }
-.Logo {
-  padding-top: 10px;
-  width: 221;
-  display: inline-block;
+nav ul li{
+    display: none;
 }
-nav ul li {
-  display: inline-block;
-  list-style: none;
-  margin: 10px 20px;
+/* ---------Home section------------ */
+#Home {
+    /* border: black 2px solid; */
+    padding-top: 100px;
+    padding-right: 50px;
+    padding-bottom: 30px;
 }
+
+h1 {
+    padding-left: 50px;
+    font-size: 64px;
+}
+h4 {
+    font-size: 20px;
+    padding-left: 60px;
+    padding-top: 20px;
+}
+h2 {
+    font-size: 32px;
+    padding-left: 60px;
+    padding-top: 20px;
+}
+#Home img {
+    display: none;
+}
+/* ---------About section------------ */
+#About {
+    /* border: black 2px solid; */
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+}
+#About img {
+    display: none;
+}
+/* ---------Services section------------ */
+#Services {
+    /* border: black 2px solid; */
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+}
+
+.ServicesLayer {
+    color: #4d4d4d;
+}
+
+/* ---------Projects section------------ */
+#Projects {
+    /* border: black 2px solid; */
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+}
+.placeholder {
+    width: 120px;
+    padding-left: 40px;
+    padding-top: 25px;
+}
+/* ---------Contact section------------ */
+
+#Contact {
+    /* border: black 2px solid; */
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h3 {
+    font-size: 24px;
+    padding-left: 60px;
+}
+
 /*---------atagsAnimation--------*/
 
- a {
-  color: #000000;
-  text-decoration: none;
-  font-weight: 400;
-  position: relative;
-}
- a::after {
-  content: '';
-  width: 0;
-  height: 1.5px;
-  background: #4e4d4d;
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  transition: 0.5s;
-}
- a:hover:after {
-  width: 100%;
-}
+a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 400;
+    position: relative;
+  }
+   a::after {
+    content: '';
+    width: 0;
+    height: 1.5px;
+    background: #4e4d4d;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    transition: 0.5s;
+  }
+   a:hover:after {
+    width: 100%;
+  }
 
-/*---------Box--------*/
-.box{
-  margin-top: 150px;
-  padding-left: 5%;
-}
+  @media only screen and (min-width: 950px){
+    .menu_img {
+        display:none;
+    }
+    .website_name_img {
+        width: 270px;
+    }
+    nav ul li {
+        display: inline-block;
+        list-style: none;
+      }
+    nav ul li h4 {
+        font-size: 30px;
+        padding-left: 30px;
+        padding-top: 30px;
+    }
+    h1 {
+        padding-left: 125px;
+        font-size: 128px;
+    }
+    
+    h2 {
+        font-size: 32px;
+        padding-left: 175px;
+        padding-top: 20px;
+    }
+    h3 {
+        font-size: 24px;
+        padding-left: 175px;
+    }
+    h4 {
+        font-size: 32px;
+        padding-left: 175px;
+        padding-top: 20px;
+    }
+  }
 
-.box h4 {
-  margin-top: 20px;
-  padding-left: 100px;
-}
-#Contact {
-  height: 90vh;
-}
+  @media only screen and (min-width: 750px){
+    .placeholder{
+        padding-left: 100px;
+    }
+    #Home img {
+        width: 300px;
+        float: right;
+        display: block;
+        padding: 30px;
+      }
+      #About img {
+        width: 300px;
+        float: left;
+        display: block;
+        padding: 50px;
+      }
+    h1 {
+        padding-left: 95px;
+        font-size: 128px;
+    }
+    
+    h2 {
+        font-size: 32px;
+        padding-left: 110px;
+        padding-top: 20px;
+    }
+    h3 {
+        font-size: 24px;
+        padding-left: 110px;
+    }
+    h4 {
+        font-size: 32px;
+        padding-left: 110px;
+        padding-top: 20px;
+    }
+  }
 
-
+  @media only screen and (min-width: 1100px){
+    .placeholder{
+        padding-left: 100px;
+    }
+    .website_name_img {
+        width: 350px;
+    }
+    #Home img {
+        width: 400px;
+        float: right;
+        display: block;
+        padding: 30px;
+      }
+      #About img {
+        width: 400px;
+        float: left;
+        display: block;
+        padding: 50px;
+      }
+    h1 {
+        padding-left: 200px;
+        font-size: 180px;
+    }
+    
+    h2 {
+        font-size: 32px;
+        padding-left: 110px;
+        padding-top: 20px;
+    }
+    h3 {
+        font-size: 24px;
+        padding-left: 110px;
+    }
+    h4 {
+        font-size: 32px;
+        padding-left: 110px;
+        padding-top: 20px;
+    }
+  }
