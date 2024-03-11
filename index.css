@@ -173,16 +173,38 @@ a {
    a:hover:after {
     width: 100%;
   }
+  @media only screen and (min-width: 750px){
+    .placeholder{
+        padding-left: 100px;
+    }
+
+    h1 {
+        padding-left: 95px;
+        font-size: 128px;
+    }
+    
+    h2 {
+        font-size: 32px;
+        padding-left: 110px;
+        padding-top: 20px;
+    }
+    h3 {
+        font-size: 24px;
+        padding-left: 110px;
+    }
+    h4 {
+        font-size: 32px;
+        padding-left: 110px;
+        padding-top: 20px;
+    }
+  }
 
   @media only screen and (min-width: 950px){
-    .menu_img {
-        display:none;
-    }
     .website_name_img {
         width: 270px;
     }
     nav ul li {
-        display: inline-block;
+        display: none;
         list-style: none;
       }
     nav ul li h4 {
@@ -211,44 +233,21 @@ a {
     }
   }
 
-  @media only screen and (min-width: 750px){
-    .placeholder{
-        padding-left: 100px;
+
+
+  @media only screen and (min-width: 1080px){
+    .menu_img{
+        display: none;
     }
-    #Home img {
-        width: 300px;
-        float: right;
-        display: block;
-        padding: 30px;
-      }
-      #About img {
-        width: 300px;
-        float: left;
-        display: block;
-        padding: 50px;
-      }
-    h1 {
-        padding-left: 95px;
-        font-size: 128px;
+    nav ul li {
+        display: inline-block;
+        list-style: none;
+    }
+    nav ul li h4 {
+        padding-left: 20px;
+        padding-top: 57px;
     }
     
-    h2 {
-        font-size: 32px;
-        padding-left: 110px;
-        padding-top: 20px;
-    }
-    h3 {
-        font-size: 24px;
-        padding-left: 110px;
-    }
-    h4 {
-        font-size: 32px;
-        padding-left: 110px;
-        padding-top: 20px;
-    }
-  }
-
-  @media only screen and (min-width: 1100px){
     .placeholder{
         padding-left: 100px;
     }
@@ -256,20 +255,22 @@ a {
         width: 350px;
     }
     #Home img {
-        width: 400px;
+        width: 350px;
         float: right;
         display: block;
-        padding: 30px;
+        padding-bottom: 30px;
       }
       #About img {
-        width: 400px;
+        width: 350px;
         float: left;
         display: block;
-        padding: 50px;
+        padding: 30px;
+        padding-left: 110px;
       }
     h1 {
-        padding-left: 200px;
-        font-size: 180px;
+
+        padding-left: 110px;
+        font-size: 154px;
     }
     
     h2 {
@@ -277,13 +278,34 @@ a {
         padding-left: 110px;
         padding-top: 20px;
     }
+    h2 .ServicesLayer {
+        padding-left: 200px;
+    }
     h3 {
         font-size: 24px;
         padding-left: 110px;
     }
     h4 {
         font-size: 32px;
-        padding-left: 110px;
+        padding-left: 120px;
         padding-top: 20px;
+    }
+    
+    #Home h4 {
+        padding-left: 160px;
+        padding-bottom: 50px;
+    }
+    #Services h1 {
+        padding-top: 30px;
+        padding-left: 110px;
+    }
+    .ServicesLayer {
+        padding-left: 160px;
+    }
+    b {
+        font-weight: 600;
+    }
+    @media only screen and (min-width: 1920px){
+       
     }
   }
