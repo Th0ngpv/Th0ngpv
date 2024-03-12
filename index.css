@@ -4,7 +4,7 @@
 */
 
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+h1, h2, h3, p, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -94,7 +94,7 @@ h1 {
     padding-left: 50px;
     font-size: 64px;
 }
-h4 {
+p {
     font-size: 20px;
     padding-left: 60px;
     padding-top: 20px;
@@ -200,7 +200,7 @@ a {
         font-size: 24px;
         padding-left: 110px;
     }
-    h4 {
+    p {
         font-size: 32px;
         padding-left: 110px;
         padding-top: 20px;
@@ -216,7 +216,7 @@ a {
         display: none;
         list-style: none;
       }
-    nav ul li h4 {
+    nav ul li p {
         font-size: 30px;
         padding-left: 30px;
         padding-top: 30px;
@@ -235,7 +235,7 @@ a {
         font-size: 24px;
         padding-left: 175px;
     }
-    h4 {
+    p {
         font-size: 32px;
         padding-left: 175px;
         padding-top: 20px;
@@ -253,7 +253,7 @@ a {
         display: inline-block;
         list-style: none;
     }
-    nav ul li h4 {
+    nav ul li p {
         padding-left: 20px;
         padding-top: 57px;
     }
@@ -295,13 +295,13 @@ a {
         font-size: 24px;
         padding-left: 110px;
     }
-    h4 {
+    p {
         font-size: 32px;
         padding-left: 120px;
         padding-top: 20px;
     }
     
-    #Home h4 {
+    #Home p {
         padding-left: 160px;
         padding-bottom: 50px;
     }
@@ -332,11 +332,11 @@ a {
         padding-left: 110px;
     }
 
-    #Home h4 {
+    #Home p {
         padding-left: 250px;
     }
 
-    h4 {
+    p {
         font-size: 36px;
     }
     #Services {
