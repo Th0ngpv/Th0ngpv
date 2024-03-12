@@ -174,9 +174,7 @@ a {
     width: 100%;
   }
   @media only screen and (min-width: 750px){
-    section {
-        width: 750px;
-    }
+    
     .placeholder{
         padding-left: 100px;
     }
@@ -203,9 +201,7 @@ a {
   }
 
   @media only screen and (min-width: 950px){
-    section {
-        width: 950px;
-    }
+    
     .website_name_img {
         width: 270px;
     }
@@ -242,9 +238,7 @@ a {
 
 
   @media only screen and (min-width: 1080px){
-    section {
-        width: 1080px;
-    }
+    
     .menu_img{
         display: none;
     }
@@ -314,10 +308,10 @@ a {
     b {
         font-weight: 600;
     }
-    @media only screen and (min-width: 1920px){
+    @media only screen and (min-width: 1440px){
     section {
-        width: 1920px;
         height: 600px;
+        padding-left: 100px;
     }
 
     #Home img {
@@ -328,11 +322,9 @@ a {
     #About img {
         width: 400px;
         padding: 40px;
-        padding-left: 210px;
+        padding-left: 110px;
     }
-    #Home h1 {
-        padding-left: 210px;
-    }
+
     #Home h4 {
         padding-left: 250px;
     }
@@ -342,13 +334,6 @@ a {
     }
     #Services {
         height: 800px;
-        padding-left: 100px;
-    }
-    #Projects {
-        padding-left: 100px;
-    }
-    #Contact {
-        padding-left: 100px;
     }
     }
   }
