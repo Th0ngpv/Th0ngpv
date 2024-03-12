@@ -49,6 +49,13 @@ table {
 body {
     background-color: #eeeeee;
 }
+* {
+    scroll-behavior: smooth;
+}
+::selection {
+	color:white;
+	background:black;
+}
 /* ---------Nav bar------------ */
 .website_name_img {
     width: 200px;
