@@ -174,6 +174,9 @@ a {
     width: 100%;
   }
   @media only screen and (min-width: 750px){
+    section {
+        width: 750px;
+    }
     .placeholder{
         padding-left: 100px;
     }
@@ -200,6 +203,9 @@ a {
   }
 
   @media only screen and (min-width: 950px){
+    section {
+        width: 950px;
+    }
     .website_name_img {
         width: 270px;
     }
@@ -236,6 +242,9 @@ a {
 
 
   @media only screen and (min-width: 1080px){
+    section {
+        width: 1080px;
+    }
     .menu_img{
         display: none;
     }
@@ -251,22 +260,21 @@ a {
     .placeholder{
         padding-left: 100px;
     }
-    .website_name_img {
-        width: 350px;
-    }
+    
     #Home img {
         width: 350px;
         float: right;
         display: block;
         padding-bottom: 30px;
-      }
-      #About img {
+        padding-top: 30px;
+    }
+    #About img {
         width: 350px;
         float: left;
         display: block;
         padding: 30px;
         padding-left: 110px;
-      }
+    }
     h1 {
 
         padding-left: 110px;
@@ -278,6 +286,7 @@ a {
         padding-left: 110px;
         padding-top: 20px;
     }
+
     h2 .ServicesLayer {
         padding-left: 200px;
     }
@@ -306,6 +315,40 @@ a {
         font-weight: 600;
     }
     @media only screen and (min-width: 1920px){
-       
+    section {
+        width: 1920px;
+        height: 600px;
+    }
+
+    #Home img {
+        width: 400px;
+        padding: 40px;
+        padding-right: 150px;
+    }
+    #About img {
+        width: 400px;
+        padding: 40px;
+        padding-left: 210px;
+    }
+    #Home h1 {
+        padding-left: 210px;
+    }
+    #Home h4 {
+        padding-left: 250px;
+    }
+
+    h4 {
+        font-size: 36px;
+    }
+    #Services {
+        height: 800px;
+        padding-left: 100px;
+    }
+    #Projects {
+        padding-left: 100px;
+    }
+    #Contact {
+        padding-left: 100px;
+    }
     }
   }
