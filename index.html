@@ -10,6 +10,7 @@
 <body>
     
     <nav>
+        <span onclick="openNav()"><img class="menu_img" src="image/menu-hamburger-nav-svgrepo-com.svg" alt="Menu button"></span>
         <a href="#Home"><img class="website_name_img" src="image/Websitename.svg" alt="Logo"></a>
         
         <ul>
@@ -19,14 +20,15 @@
             <li><p><a href="#Contact">Contact</a></p></li>
         </ul>
 
-        <span onclick="openNav()"><img class="menu_img" src="image/menu-hamburger-nav-svgrepo-com.svg" alt="Menu button"></span>
+        
     </nav>
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
+        <a href="#Home">Home</a>
+        <a href="#About">About</a>
+        <a href="#Services">Services</a>
+        <a href="#Projects">Clients</a>
+        <a href="#Contact">Contact</a>
       </div>
     <main>
         <section id="Home">
@@ -130,7 +132,7 @@
 </body>
 <script>
     function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("mySidenav").style.width = "200px";
 }
 
 function closeNav() {
