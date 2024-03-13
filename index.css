@@ -81,9 +81,11 @@ nav {
     padding-left: 10%;
     padding-right: 10%;
 }
-nav ul li{
+nav ul {
+    position: absolute;
     display: none;
 }
+
 /* ---------Side nav------------ */
 .sidenav {
     height: 100%;
@@ -261,10 +263,6 @@ a {
     .website_name_img {
         width: 270px;
     }
-    nav ul li {
-        display: none;
-        list-style: none;
-      }
     nav ul li p {
         font-size: 30px;
         padding-left: 30px;
@@ -294,13 +292,18 @@ a {
 
 
   @media only screen and (min-width: 1080px){
-    
-    .menu_img{
+    span, .menu_img {
+        position: absolute;
         display: none;
+    }
+    nav ul {
+        position: relative;
+        display: inline-block;
     }
     nav ul li {
         display: inline-block;
         list-style: none;
+        position: relative;
     }
     nav ul li p {
         padding-left: 20px;
