@@ -75,6 +75,7 @@ nav {
     background-color: #eeeeee;
     position: fixed;
     justify-content: space-between;
+    flex-wrap:nowrap;
     display: flex;
     padding-left: 10%;
     padding-right: 10%;
@@ -283,13 +284,15 @@ a {
     }
     
     h2 {
-        font-size: 32px;
+        font-size: 36px;
         padding-left: 110px;
         padding-top: 20px;
+        font-weight: 600;
     }
 
     h2 .ServicesLayer {
         padding-left: 200px;
+        
     }
     h3 {
         font-size: 24px;
@@ -312,9 +315,7 @@ a {
     .ServicesLayer {
         padding-left: 160px;
     }
-    b {
-        font-weight: 600;
-    }
+    
     @media only screen and (min-width: 1440px){
     section {
         height: 600px;
@@ -341,6 +342,25 @@ a {
     }
     #Services {
         height: 800px;
+    }
+    .box{
+        width: 65vh;
+        flex-wrap: wrap;
+        float: left;
+    }
+    .ServicesLayer{
+        display: none;
+    }
+    #Large-ServicesLayer{
+        float: right;
+        padding-left: 0px;
+        padding-right: 200px;
+        
+    }
+    #Large-ServicesLayer h2 {
+        padding: 0px;
+        font-size: 54px;
+        color: #4d4d4d;
     }
     }
   }
