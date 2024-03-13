@@ -129,6 +129,9 @@ h2 {
 .ServicesLayer {
     color: #4d4d4d;
 }
+#Large-ServicesLayer{
+    display: none;
+}
 
 /* ---------Projects section------------ */
 #Projects {
