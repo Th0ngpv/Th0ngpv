@@ -8,6 +8,7 @@
     <link rel="icon" type="image/png" href="image/Logo.png">
 </head>
 <body>
+    
     <nav>
         <a href="#Home"><img class="website_name_img" src="image/Websitename.svg" alt="Logo"></a>
         
@@ -18,8 +19,15 @@
             <li><p><a href="#Contact">Contact</a></p></li>
         </ul>
 
-        <img class="menu_img" src="image/menu-hamburger-nav-svgrepo-com.svg" alt="Menu button">
+        <span onclick="openNav()"><img class="menu_img" src="image/menu-hamburger-nav-svgrepo-com.svg" alt="Menu button"></span>
     </nav>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
     <main>
         <section id="Home">
             <img id="homePageimg" src="image/homePageimg.png" alt="Home page image">
@@ -120,4 +128,13 @@
     </main>
     
 </body>
+<script>
+    function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
 </html>
