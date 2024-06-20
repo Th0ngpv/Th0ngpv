@@ -19,6 +19,29 @@ body {
 }
 
 /* navigation bar settings */
+nav {
+    margin-top: 1em;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+nav ul {
+    margin: 0;
+    border-radius: 20px;
+    padding: 0.5em;
+    background-color: var(--secondary);
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+nav ul li {
+    list-style-type: none;
+    & a {
+        text-decoration: none;
+        color: var(--text);
+    }
+}
 
 /* main sections settings */
 
