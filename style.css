@@ -10,3 +10,7 @@
     --paragraphs-font-family: "Poppins", Arial, sans-serif;
     font-family: var(--paragraphs-font-family);
 }
+* {
+    margin: 0;
+    padding: 0;
+}
