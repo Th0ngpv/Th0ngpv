@@ -1,7 +1,7 @@
 :root {
     /* colors settings */
     --text: #E9EBED;
-    --back-ground: linear-gradient(to right, #031B37, #022349,#012957,#003066);
+    --background: linear-gradient(to right, #031B37, #022349,#012957,#003066);
     --primary: linear-gradient( to right,#164266,#3C5F7A);
     --secondary: rgba(91,104,128,0.2);
     --accent: #6EA3CC;
@@ -10,15 +10,28 @@
     --paragraphs-font-family: "Poppins", Arial, sans-serif;
     font-family: var(--paragraphs-font-family);
 }
+
+/* general settings */
 * {
     margin: 0;
     padding: 0;
 }
 body {
-    background: var(--back-ground);
+    background: var(--background);
 }
 .highlight {
     color: var(--accent);
+}
+h1 {
+    font-family: var(--headings-font-family);
+    font-size: 2.5rem;
+}
+p {
+    font-family: var(--paragraphs-font-family);
+    font-size: 1rem;
+}
+button {
+    font-size: 1rem;
 }
 
 /* navigation bar settings */
@@ -33,9 +46,10 @@ nav ul {
     margin: 0;
     border-radius: 20px;
     padding: 0.5em;
+    padding-right: 0.1em;
     background-color: var(--secondary);
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     gap: 1em;
 }
 nav ul li {
@@ -44,6 +58,13 @@ nav ul li {
         text-decoration: none;
         color: var(--text);
     }
+}
+
+nav ul :last-child a {
+    background-color: var(--accent);
+    color: var(--text);
+    border-radius: 20px;
+    padding: 0.4em;
 }
 
 /* main sections settings */
@@ -87,6 +108,15 @@ main section {
         background: var(--primary);
         border: none;
         border-radius: 20px;
+    }
+    & button:hover, button:focus {
+        translate: 0px -2px;
+        transition: 0.2s ease-in-out;
+        cursor: pointer;
+        box-shadow: 0 5px 15px var(--secondary);
+    }
+    & .secondary-btn {
+        background: var(--secondary);
     }
 }
 
