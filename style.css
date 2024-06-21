@@ -69,10 +69,8 @@ main section {
 }
 
 #hero-section #logo {
-    width: 150px;
-    height: 150px;
-    background: var(--primary);
-    border-radius: 20px;
+    width: 30vw;
+    height: 30vw;
 }
 
 #hero-section .button-list {
