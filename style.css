@@ -184,14 +184,6 @@ main section {
         width: 100%;
     }
 }
-/* hover animation */
-.tech-slider:hover .tech-card {
-    animation-play-state: paused!important;
-    filter: opacity(20%);
-}
-.tech-slider .tech-card:hover {
-    filter: opacity(80%);
-}
 
 @keyframes autoRun {
     from{
