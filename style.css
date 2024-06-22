@@ -2,7 +2,7 @@
     /* colors settings */
     --text: #E9EBED;
     --background: linear-gradient(to right, #031B37, #022349,#012957,#003066);
-    --primary: linear-gradient( to right,#164266,#3C5F7A);
+    --primary: linear-gradient( to bottom left,#164266,#3C5F7A);
     --secondary: rgba(91,104,128,0.2);
     --accent: #6EA3CC;
     /* fonts settings */
