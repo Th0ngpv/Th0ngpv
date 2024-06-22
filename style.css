@@ -135,11 +135,11 @@ main section {
         color: var(--text);
         margin-right: auto;
         margin-left: auto;
-        height: 3rem;
+        height: 3em;
         width: 80%;
         background: var(--primary);
         border: none;
-        border-radius: 20px;
+        border-radius: 10px;
     }
     & button:hover, button:focus {
         translate: 0px -2px;
