@@ -142,7 +142,7 @@ main section {
         border-radius: 10px;
     }
     & button:hover, button:focus {
-        translate: 0px -2px;
+        transform: translate(0, 5);
         transition: 0.2s ease-in-out;
         cursor: pointer;
         box-shadow: 0 5px 15px var(--secondary);
