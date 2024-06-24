@@ -159,7 +159,6 @@ main section {
 }
 
 .tech-slider {
-    margin-top: 3em;
     width: 100%;
     height: var(--height);
     overflow: hidden;
