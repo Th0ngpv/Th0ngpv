@@ -188,8 +188,8 @@ main section {
     height: var(--height);
     position: absolute;
     left: 100%;
-    animation: autoRun 10s linear infinite ;
-    animation-delay: calc((10s / var(--quantity)) * (var(--position) - 1) );
+    animation: autoRun 8s infinite linear;
+    animation-delay: calc((8s / var(--quantity)) * (var(--position) - 1));
     filter: opacity(20%);
     & img {
         width: 100%;
@@ -203,9 +203,6 @@ main section {
         left: calc(var(--width) * -1);
     }
 }
-
-
-
 
 /* project section settings */
 #project-card-list {
