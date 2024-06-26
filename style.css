@@ -9,6 +9,7 @@
     --headings-font-family: "Roboto slab", Times, serif;
     --paragraphs-font-family: "Poppins", Arial, sans-serif;
     font-family: var(--paragraphs-font-family);
+    font-size: 12px;
 }
 
 /* general settings */
@@ -24,22 +25,6 @@ body {
     background: var(--background);
     font-size: 1rem;
 }
-@media screen and (min-width: 786px ) {
-    :host, :root {
-        --rem: 20;
-    }
-}
-@media screen and (min-width: 1080px ) {
-    :host, :root {
-        --rem: 24;
-    }
-}
-@media screen and (min-width: 1440px ) {
-    :host, :root {
-        --rem: 26;
-    }
-}
-
 .highlight {
     color: var(--accent);
 }
@@ -47,17 +32,17 @@ h1,h2,h3,h4,h5,h6 {
     font-family: var(--headings-font-family);
 }
 h1 {
-    font-size: 2.5em;
+    font-size: 2.5rem;
 }
 h2 {
-    font-size: 2em;
+    font-size: 2rem;
 }
 p {
     font-family: var(--paragraphs-font-family);
-    font-size: 1em;
+    font-size: 1rem;
 }
 button {
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 /* navigation bar settings */
@@ -75,6 +60,7 @@ nav ul {
     padding: 0.5rem;
     padding-right: 0.1rem;
     background-color: var(--secondary);
+    backdrop-filter: blur(25px);
     display: flex;
     justify-content: flex-end;
     gap: 1rem;
@@ -119,10 +105,17 @@ main section {
     align-items: center;
     gap: 2em;
 }
+.section-small-title, .section-overview {
+    font-size: 1rem;
+    color: var(--accent);
+}
+.section-small-title {
+    font-weight: 500;
+}
 
 /* hero section settings */
 #hero-section {
-    padding-top: 8em;
+    padding-top: 6rem;
 }
 #hero-section #logo {
     width: 10rem;
@@ -213,22 +206,88 @@ main section {
 }
 .project-card {
     width: 90vw;
-    height: 80vh;
-    background-color: transparent;
-    backdrop-filter: blur(50px);
-    border: 5px solid var(--secondary);
+    height: 60vh;
+    background-color: var(--secondary);
+    backdrop-filter: blur(25px);
+    border: 2px solid var(--secondary);
     border-radius: 20px;
     position: sticky;
     top:5rem
 }
 .card-body {
-    position: relative;
-    top: 50%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+}
+.left-container, .right-container {
+    width: 100%;
+    height: 100%;
+}
+.left-container {
+    text-align: left;
+    & li {
+        list-style: none;
+    }
+}
+.right-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.project-model {
+    width: 60%;
+    height: 80%;
+    background-color: var(--accent);
+    border-radius: 10px 10px 0 0;
 }
 
 /* about me section settings */
-
+#clone-fiv {
+    height: 100vh;
+}
 /* FAQ section settings */
 
 /* footer settings */
 
+/* media tags settings */
+@media screen and (min-width: 768px) {
+    :host, :root {
+        font-size: 16px;
+    }
+    #hero-section .button-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        & button {
+            width: fit-content;
+            padding: 0 2em;
+            margin: 0 0;
+        }
+    }
+    .project-card {
+        height: 40vh;
+    }
+    .card-body {
+        flex-direction: row;
+    }
+}
+@media screen and (min-width: 1024px ) {
+    :host, :root {
+        font-size: 20px;
+    }
+}
+@media screen and (min-width: 1440px ) {
+    :host, :root {
+        font-size: 24px;
+    }
+    
+}
+@media screen and (min-width: 2560px ) {
+    :host, :root {
+        font-size: 32px;
+    }
+    
+}
