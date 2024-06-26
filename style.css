@@ -43,6 +43,7 @@ p {
 }
 button {
     font-size: 1rem;
+    width: 100%;
 }
 
 /* navigation bar settings */
