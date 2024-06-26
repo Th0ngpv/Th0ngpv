@@ -3,7 +3,7 @@
     --text: #E9EBED;
     --background: linear-gradient(to right, #031B37, #022349,#012957,#003066);
     --primary: linear-gradient( to bottom left,#164266,#3C5F7A);
-    --secondary: rgba(91,104,128,0.2);
+    --secondary: rgba(91,104,128,0.4);
     --accent: #6EA3CC;
     /* fonts settings */
     --headings-font-family: "Roboto slab", Times, serif;
