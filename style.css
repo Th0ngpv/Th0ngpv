@@ -282,8 +282,10 @@ main section {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        & button {
+        button {
+            width: -moz-fit-content;
             width: fit-content;
+            min-width: 3em;
             padding: 0 2em;
             margin: 0 0;
         }
