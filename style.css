@@ -61,6 +61,7 @@ nav ul {
     padding: 0.5rem;
     padding-right: 0.1rem;
     background-color: var(--secondary);
+    -webkit-backdrop-filter: blur(25px);
     backdrop-filter: blur(25px);
     display: flex;
     justify-content: flex-end;
@@ -209,6 +210,7 @@ main section {
     width: 90vw;
     height: 60vh;
     background-color: var(--secondary);
+    -webkit-backdrop-filter: blur(25px);
     backdrop-filter: blur(25px);
     border: 2px solid var(--secondary);
     border-radius: 20px;
