@@ -229,9 +229,22 @@ main section {
     width: 100%;
 }
 .left-container {
+    padding: 2em 0 2em 0;
+    flex-direction: column;
     text-align: left;
+    align-items: center;
+    & project-name {
+        width: 100%;
+    }
     & li {
-        list-style: none;
+        list-style:disc inside;
+    }
+    & h3 {
+        color: var(--accent);
+    }
+    & button {
+        margin: 0 0;
+        font-size: 1em
     }
 }
 .right-container {
