@@ -221,7 +221,7 @@ main section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 1em;
+    gap: 1em;
 }
 .left-container, .right-container {
     width: 100%;
