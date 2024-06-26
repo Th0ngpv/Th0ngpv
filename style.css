@@ -248,15 +248,15 @@ main section {
     }
 }
 .right-container {
-    display: flex;
-    align-items: flex-end;
     justify-content: center;
+    height: auto;
+    min-height: 30vh;
 }
 .project-model {
-    width: 60%;
-    height: 80%;
-    background-color: var(--accent);
-    border-radius: 10px 10px 0 0;
+    width: 65%;
+    background-image: var(--primary);
+    box-shadow: 3px 1px 1px var(--accent);
+    border-radius: 1em 1em 0 0;
 }
 
 /* about me section settings */
