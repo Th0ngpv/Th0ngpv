@@ -28,6 +28,7 @@ body {
 .highlight {
     color: var(--accent);
 }
+/* font size and family settings */
 h1,h2,h3,h4,h5,h6 {
     font-family: var(--headings-font-family);
 }
@@ -41,6 +42,7 @@ p {
     font-family: var(--paragraphs-font-family);
     font-size: 1rem;
 }
+/* buttons settings */
 button {
     font-size: 1rem;
     width: 100%;
@@ -62,7 +64,6 @@ button:hover, button:focus {
 .secondary-btn {
     background: var(--secondary);
 }
-
 /* navigation bar settings */
 nav {
     margin-top: 1rem;
@@ -124,6 +125,7 @@ main section {
     align-items: center;
     gap: 2em;
 }
+/* sections's mutual classes settings */
 .section-small-title, .section-overview {
     font-size: 1rem;
     color: var(--accent);
@@ -150,7 +152,7 @@ main section {
     flex-direction: column;
     gap: 1rem;
 }
-
+/* tech stack slider settings */
 .tech-slider {
     width: 100%;
     height: var(--height);
@@ -175,7 +177,6 @@ main section {
         position: relative;
     }
 }
-
 .tech-slider .tech-card-list .tech-card {
     width: var(--width);
     height: var(--height);
@@ -188,7 +189,6 @@ main section {
         width: 100%;
     }
 }
-
 @keyframes autoRun {
     from{
         left: 100%;
@@ -258,6 +258,7 @@ main section {
     :host, :root {
         font-size: 16px;
     }
+    /* hero section settings */
     #hero-section .button-list {
         display: flex;
         flex-direction: row;
@@ -268,6 +269,7 @@ main section {
             margin: 0 0;
         }
     }
+    /* projects section settings */
     .project-card {
         height: 40vh;
     }
@@ -279,6 +281,10 @@ main section {
     :host, :root {
         font-size: 20px;
     }
+    /* projects section settings */
+    .project-card {
+        width: 65vw;
+    }
 }
 @media screen and (min-width: 1440px ) {
     :host, :root {
@@ -289,6 +295,10 @@ main section {
 @media screen and (min-width: 2560px ) {
     :host, :root {
         font-size: 32px;
+    }
+    /* projects section settings */
+    .project-card {
+        width: 80vw;
     }
     
 }
