@@ -205,15 +205,14 @@ main section {
     flex-direction: column;
 }
 .project-card {
-    width: 90vw;
-    height: 60vh;
+    width: 80vw;
     background-color: var(--secondary);
     -webkit-backdrop-filter: blur(25px);
     backdrop-filter: blur(25px);
     border: 2px solid var(--secondary);
     border-radius: 20px;
     position: sticky;
-    top:5rem
+    top:5rem;
 }
 /* card body settings */
 .card-body {
