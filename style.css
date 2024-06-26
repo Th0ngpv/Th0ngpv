@@ -44,6 +44,23 @@ p {
 button {
     font-size: 1rem;
     width: 100%;
+    color: var(--text);
+    margin-right: auto;
+    margin-left: auto;
+    height: 3em;
+    width: 80%;
+    background: var(--primary);
+    border: none;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+button:hover, button:focus {
+    transform: translate(0, -5px);
+    cursor: pointer;
+    box-shadow: 0 5px 10px var(--accent);
+}
+.secondary-btn {
+    background: var(--secondary);
 }
 
 /* navigation bar settings */
@@ -132,25 +149,6 @@ main section {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    & button {
-        color: var(--text);
-        margin-right: auto;
-        margin-left: auto;
-        height: 3em;
-        width: 80%;
-        background: var(--primary);
-        border: none;
-        border-radius: 10px;
-    }
-    & button:hover, button:focus {
-        transform: translate(0, 5);
-        transition: 0.2s ease-in-out;
-        cursor: pointer;
-        box-shadow: 0 5px 10px var(--accent);
-    }
-    & .secondary-btn {
-        background: var(--secondary);
-    }
 }
 
 .tech-slider {
