@@ -139,6 +139,7 @@ main section {
     padding: 6rem 0 0 0;
 }
 #hero-section #logo {
+    content:url(/image/Logo.png);
     width: 10rem;
     height: 10rem;
 }
@@ -259,6 +260,11 @@ main section {
         font-size: 16px;
     }
     /* hero section settings */
+    #hero-section #logo {
+        content:url(/image/website-name.png);
+        width: 20rem;
+        height: auto;
+    }
     #hero-section .button-list {
         display: flex;
         flex-direction: row;
