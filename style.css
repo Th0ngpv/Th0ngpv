@@ -29,7 +29,7 @@ body {
     color: var(--accent);
 }
 /* font size and family settings */
-h1,h2,h3,h4,h5,h6 {
+h1,h2 {
     font-family: var(--headings-font-family);
 }
 h1 {
@@ -153,7 +153,7 @@ main section {
     gap: 1rem;
 }
 /* tech stack slider settings */
-.tech-slider {
+.slider {
     width: 100%;
     height: var(--height);
     overflow: hidden;
@@ -169,7 +169,7 @@ main section {
         var(--accent) 10% 90%,
         transparent
     );
-    & .tech-card-list { 
+    & .card-list { 
         display: flex;
         height: 100%;
         width: 100%;
@@ -177,7 +177,7 @@ main section {
         position: relative;
     }
 }
-.tech-slider .tech-card-list .tech-card {
+.slider .card-list .card {
     width: var(--width);
     height: var(--height);
     position: absolute;
@@ -258,6 +258,12 @@ main section {
     background-image: var(--primary);
     box-shadow: 3px 1px 1px var(--accent);
     border-radius: 1em 1em 0 0;
+}
+#project-section .slider{
+    font-weight: bold;
+    background: var(--primary);
+    -webkit-mask-image: none;
+    mask-image: none;
 }
 
 /* about me section settings */
